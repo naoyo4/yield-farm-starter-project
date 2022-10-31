@@ -32,6 +32,7 @@ class Main extends Component {
                        <label className='float-left'><b>Stake Tokens</b></label>
                        <span className='float-right text-muted'>
                        Balance: {window.web3.utils.fromWei(this.props.daiTokenBalance, 'Ether')}
+                       &nbsp;&nbsp;&nbsp; mDai
                        </span>
                    </div>
                    <div className='input-group mb-4'>
@@ -43,8 +44,9 @@ class Main extends Component {
                         required
                        />
                        <div className='input-group-append'>
-                           <img src={dai} height='32' alt=""/>
-                           &nbsp;&nbsp;&nbsp; mDai
+                            &nbsp;&nbsp;&nbsp; 
+                            <img src={dai} height='48' alt=""/>
+                            
                        </div>
                    </div>
                    <button type='submit' className='btn btn-primary btn-block btn-lg'>STAKE!</button>
@@ -59,6 +61,7 @@ class Main extends Component {
                 >
                     UN-STAKE...
                 </button>
+
            </div>
        </div>
       </div>
